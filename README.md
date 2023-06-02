@@ -25,6 +25,12 @@ Create a simple command-line interface for your system using the following forma
 
 You are expected to use the ChatGPT API to complete this project, but other alternative large language models are also welcome. However, we will impose a limitation of using at most 800 tokens as input to ChatGPT for each question, as we aim to minimize costs.
 
+## How To Run?
+
+- Change `OPENAI_API_KEY` to your API Key.
+- Install required Dependency with `pip`.
+- Run python chatPDF.py test.py 
+
 ## Testing
 
 Use `test.pdf` for testing, ask these questions:
