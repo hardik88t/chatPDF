@@ -22,7 +22,7 @@ class Config:
     CHUNK_OVERLAP = 200  # Overlap between chunks
     
     # Model settings
-    MODEL_NAME = 'gemini-pro'
+    MODEL_NAME = 'gemini-1.5-flash'  # Updated model name
     TEMPERATURE = 0.1  # Low temperature for factual responses
     
     # File paths
