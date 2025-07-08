@@ -11,7 +11,7 @@ class Config:
     """Configuration class for the application"""
     
     # API Configuration
-    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyDhu_53or7bktMHSOeO39zY40NNebvDKmA')
+    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
     
     # Token limits for cost optimization
     MAX_TOKENS_PER_REQUEST = 800

@@ -1,49 +1,38 @@
-# chatPDF
-AI that answers from PDF using chatGPT. ([chatPDF](https://www.chatpdf.com/) clone)
-Here is Gemini API key: AIzaSyDhu_53or7bktMHSOeO39zY40NNebvDKmA
-Use it instead of OpenAI API key for chatGPT.
+# ChatPDF Clone
 
-# Project Task Description
+A simple question-answering system for PDF documents, similar to [chatPDF](https://www.chatpdf.com/). Upload a PDF and ask questions about its content.
 
-In this project, you will develop a question-answering system similar to [chatPDF](https://www.chatpdf.com/), focused on research papers in the field of AI. Your system should be able to answer the following types of questions related to the input PDF file:
+## Features
 
-1. Direct query questions that can be matched to the text in the paragraph 
+The system can handle different types of questions about PDF documents:
 
-        e.g.
-        "What is CDE?"
-        "Which datasets are used for evaluation?"
+1. **Direct questions** - Questions that can be matched directly to text in the document
+   - "What is CDE?"
+   - "Which datasets are used for evaluation?"
 
+2. **Indirect questions** - Questions requiring interpretation and synthesis
+   - "Why should we use the proposed method?"
 
-2. Indirect query questions without specific keywords in the text 
-        
-        e.g.
-        "Why should we use the proposed method?"
+3. **Reference identification** - Finding key references that inspire methodologies
 
+## Usage
 
-3. Identification of key references that inspire the proposed methodology in the paper.
+Simple command-line interface for asking questions about PDF documents.
 
-## Command-Line Interface
+## Setup
 
-Create a simple command-line interface for your system. Users should be able to ask questions through a text prompt.
-
-## Requirements and Limitations
-
-You are expected to use the ChatGPT API to complete this project, but other alternative large language models are also welcome. However, as we aim to minimize costs, make sure to do most of the processing on your side before sending the request to the API. for that you can limit the context to small number of tokens, like 800 tokens.
+1. Install dependencies: `pip install -r requirements.txt`
+2. Set your Gemini API key in environment variables
+3. Run: `python main.py chat your_document.pdf`
 
 ## Testing
 
-For testing, ask these questions to bert_research_paper.pdf (16 pages):
+Test with the included research papers:
 
-Example Question 1:
+**BERT Paper Questions:**
+- What kind of neural network architecture is used?
+- What datasets have been used for evaluation?
+- What are the main discoveries?
+- What is the key insight of the proposed method?
 
-    (1) what kind of neural network architecture is used in this paper?
-
-    (2) what datasets have been used for evaluation
-
-Example Question 2:
-
-    (1) what are the main discoveries of this paper?
-
-    (2) what is the key insight of the proposed method?
-
-Similarly test ai_application_research_paper.pdf & ml_in_ai_research_paper.pdf by making appropriate questions.
+Similar questions can be asked for the other included papers.

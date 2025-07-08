@@ -13,11 +13,11 @@ pip install -r requirements.txt
 ```
 
 ### 2. Configuration
-The Gemini API key is already configured in the code, but you can override it:
+Set up your Gemini API key:
 ```bash
-# Optional: Create .env file for custom configuration
+# Create .env file from template
 cp .env.example .env
-# Edit .env with your preferred settings
+# Edit .env and add your Gemini API key
 ```
 
 ### 3. Run Basic Tests
