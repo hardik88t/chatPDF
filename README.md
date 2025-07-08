@@ -1,5 +1,7 @@
 # chatPDF
 AI that answers from PDF using chatGPT. ([chatPDF](https://www.chatpdf.com/) clone)
+Here is Gemini API key: AIzaSyDhu_53or7bktMHSOeO39zY40NNebvDKmA
+Use it instead of OpenAI API key for chatGPT.
 
 # Project Task Description
 
@@ -10,30 +12,27 @@ In this project, you will develop a question-answering system similar to [chatPD
         e.g.
         "What is CDE?"
         "Which datasets are used for evaluation?"
+
+
 2. Indirect query questions without specific keywords in the text 
         
         e.g.
         "Why should we use the proposed method?"
-        
+
+
 3. Identification of key references that inspire the proposed methodology in the paper.
 
 ## Command-Line Interface
 
-Create a simple command-line interface for your system using the following format: `ChatPDF.py file.pdf`. Users should be able to ask questions through a text prompt.
+Create a simple command-line interface for your system. Users should be able to ask questions through a text prompt.
 
 ## Requirements and Limitations
 
-You are expected to use the ChatGPT API to complete this project, but other alternative large language models are also welcome. However, we will impose a limitation of using at most 800 tokens as input to ChatGPT for each question, as we aim to minimize costs.
-
-## How To Run?
-
-- Change `OPENAI_API_KEY` to your API Key.
-- Install required Dependency with `pip`.
-- Run python chatPDF.py test.py 
+You are expected to use the ChatGPT API to complete this project, but other alternative large language models are also welcome. However, as we aim to minimize costs, make sure to do most of the processing on your side before sending the request to the API. for that you can limit the context to small number of tokens, like 800 tokens.
 
 ## Testing
 
-Use `test.pdf` for testing, ask these questions:
+For testing, ask these questions to bert_research_paper.pdf (16 pages):
 
 Example Question 1:
 
@@ -45,4 +44,6 @@ Example Question 2:
 
     (1) what are the main discoveries of this paper?
 
-    (2) what is the key insight of the proposed method?
+    (2) what is the key insight of the proposed method?
+
+Similarly test ai_application_research_paper.pdf & ml_in_ai_research_paper.pdf by making appropriate questions.
